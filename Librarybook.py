@@ -11,6 +11,13 @@ class Book:
         self.is_borrwed = True
         print (f" {self.title} borrwed successfully")
 
+    def return_book(self):
+        if not self.is_borrowed:
+            print(f"{self.title} was not borrwed")
+            self.is_borrwed =False
+            print(f'" {self.title}" returned successflly.')
+
+
 
 
 
