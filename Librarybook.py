@@ -17,6 +17,28 @@ class Book:
             self.is_borrwed =False
             print(f'" {self.title}" returned successflly.')
 
+class Library:
+    def __init__(self):
+        self.books =[]
+    def add_books(self, book):
+        self.books.append(book)
+
+    def find_book(self,title):
+        for b in self.books:
+            if b.title ==title:
+                return b
+            return None
+    def main():
+        library = Library()
+        count = int (input("How many books do you want to add"))
+        for _ in range (count):
+            title =input ("Book title: ")
+            author = input ("Author:")
+            library .add_book(Book(title,author))
+
+            
+            
+
 
 
 
