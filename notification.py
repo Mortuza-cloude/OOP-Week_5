@@ -41,5 +41,5 @@ def main():
             continue
     for n in notifications:
         n.send() 
-if __name__ =="__main__":
+if __name__ == "__main__":
     main()
